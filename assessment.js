@@ -44,7 +44,14 @@ message["text"] = "whatever I like";
  */
 
 // CODE HERE
-
+var adjustCount = {
+  upVote: function(val){
+    return val + 1;
+  },
+  downVote: function(val){
+     return val - 1;
+   }
+};
 /**
  * #5
  *
@@ -52,7 +59,7 @@ message["text"] = "whatever I like";
  */
 
 // CODE HERE
-
+var myFriends = [ 'Charity', 'Brandon', 'David', 'Connor'];
 /**
  * #6
  *
@@ -60,7 +67,7 @@ message["text"] = "whatever I like";
  */
 
 // CODE HERE
-
+myFriends.push( 'Levi');
 /**
  * #7
  *
@@ -72,7 +79,9 @@ message["text"] = "whatever I like";
 var myArray = [1, 2, 3, 4];
 // DON'T TOUCH THE CODE ABOVE
 // CODE HERE
-
+var myArrayCopy = myArray.map(function(num) {
+  return num;
+});
 /**
  * #8
  *
