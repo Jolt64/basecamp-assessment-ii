@@ -6,7 +6,11 @@
  */
 
 // CODE HERE
-
+var me = {
+  firstname: 'Jonathan',
+  age: 27,
+  state: 'Utah',
+};
 /**
  * #2
  *
@@ -15,7 +19,7 @@
  */
 
 // CODE HERE
-
+me.faveColor = "blue";
 /**
  * #3
  *
@@ -30,7 +34,7 @@ var message = {
 };
 // DON'T TOUCH THE CODE ABOVE
 // CODE HERE
-
+message["text"] = "whatever I like";
 /**
  * #4
  *
