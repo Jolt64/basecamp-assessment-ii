@@ -94,7 +94,14 @@ var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
 function evensOnly() {
   // CODE HERE
-}
+var holder = myNumbers.filter(function(val, i, r){
+  if (val %2 == 0){
+  return val;
+  };
+});
+return holder;
+};
+evensOnly(myNumbers)
 
 /**
  * #9
@@ -112,7 +119,9 @@ var peopleIknow = [
   { name: "Michelle", friend: false },
   { name: "Holly", friend: true }
 ];
-
+var trueFriends = peopleIknow.filter(function(obj,i,arr){
+  return obj.friend;
+});
 /**
  * #10
  *
@@ -123,3 +132,12 @@ var peopleIknow = [
  */
 
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
+
+function indexFinder(array){
+  var holder = array.map(function(val,i,arr){
+   return val = i;
+  });
+  return holder;
+};
+
+var indexes = indexFinder(randomNumbers)
